@@ -40,3 +40,7 @@ The model is deployed as a REST API using Flask and can be tested via Postman or
 {
   "text": "this movie is amazing"
 }
+
+
+## Live Demo
+https://sentiment-analysis-api-dqbk.onrender.com/
