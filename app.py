@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-# Load model & vectorizer
+
 model = pickle.load(open("model.pkl", "rb"))
 vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
 
@@ -17,10 +17,10 @@ def predict():
     try:
         data = request.json['text']
         
-        # convert text → vector
+       
         vec = vectorizer.transform([data])
         
-        # prediction
+       
         result = model.predict(vec)
 
         return jsonify({
